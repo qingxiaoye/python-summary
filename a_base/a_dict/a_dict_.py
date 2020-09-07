@@ -37,14 +37,15 @@ dict1 = {'a': 7, 'b': 5}
 """
 sorted 
 """
+print('对字典排序')
+
 # 对字典排序。按照values值倒序排序，返回的只有keys
 tag = sorted(dict1, key=dict1.__getitem__, reverse=True)
 print(tag)
 
 # 对字典排序。按照values值倒序排序，返回完整字典list
-
-tag2 = sorted(dict1.items(), key=itemgetter(1), reverse=True)
+tag2 = sorted(dict1.items(), key=itemgetter(0), reverse=True)
 print(tag2)
 
-sorted_results = sorted(dict1.items(), key=lambda item: item[1], reverse=True)  # list
+sorted_results = sorted(dict1.items(), key=lambda item: item[0], reverse=True)  # list
 print(sorted_results)

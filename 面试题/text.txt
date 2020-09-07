@@ -1,0 +1,10 @@
+flask>=1.1.1
+cymysql>=0.9.14
+Flask-Cors>=3.0.8
+Flask-Executor>=0.9.3
+Flask-HTTPAuth>=3.3.0
+Flask-SocketIO>=4.2.1
+Flask-SQLAlchemy>=2.4.1
+PyYAML>=5.2
+WTForms>=2.2.1
+python-dotenv>=0.13.0
