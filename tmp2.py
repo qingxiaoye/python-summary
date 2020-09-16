@@ -21,15 +21,11 @@ sc = StandardScaler()
 sc.fit(X_train)
 X_train_std = sc.transform(X_train)
 X_test_std = sc.transform(X_test)
-
 # 4. 训练逻辑回归模型
 logreg = linear_model.LogisticRegression(C=1e5)
 logreg.fit(X_train, Y_train)
 
 # 5. 预测
-predictions = logreg.predict(X_test)
-print(predictions)
 prepro = logreg.predict_proba(X_test_std)
 print(prepro)
 acc = logreg.score(X_test_std, Y_test)
-print(acc)
